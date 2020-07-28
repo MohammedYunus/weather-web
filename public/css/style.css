@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+    color:#333333;
+    margin: 2em auto;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+}
+a{
+    text-decoration: none;
+    margin-right: 1em;
+    color:#333333;
+}
+img{
+    width: 200px;
+}
+form{
+    margin: 1em 0;
+}
+input{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding-left: 0.4em;
+}
+button{
+    border-radius: 2px;
+    border: 1px solid black;
+}
+table,tr,td{
+    color:#000;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+

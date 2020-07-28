@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    {{text}}
+    <form>
+        <input type="text" placeholder="Location">
+        <button type="submit">Search</button>
+    </form>
+    <table cellpadding="8", border="1", align="center">
+        <tr>
+            <td>Location</td>
+            <td>Forecast</td>
+        </tr>
+        <tr>
+            <td id="place">country</td>
+            <td id="result">result</td>
+        </tr>
+
+    </table>
+    {{>footer}}
+    <script src="../../js/app.js"></script>
+</body>
+</html>
