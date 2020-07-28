@@ -6,6 +6,9 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express(); //using express frame work.
+const port = process.env.PORT || 3000;
+
+
 const publicDirectoryPath = path.join(__dirname, '../public'); //moving from current file to public folder
 const viewsPath = path.join(__dirname, '../templates/views'); //moving from current file to views folder
 const partialsPath = path.join(__dirname, '../templates/partials'); //moving from current file to partials folder
@@ -80,6 +83,6 @@ app.get('*',(req, res)=>{
 })
 
 //listening or displaying file on port 3000.
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`)
 })
